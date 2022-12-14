@@ -85,6 +85,7 @@ a:hover{
 form{
     display: flex;
     flex-direction: column;
+    background-color: darkorange;
 }
 
 /* CONTAINER FOOTER */
