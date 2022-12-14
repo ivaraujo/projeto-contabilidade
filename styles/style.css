@@ -82,6 +82,11 @@ a:hover{
     border: 1px solid black;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+}
+
 /* CONTAINER FOOTER */
 
 .menu-rodape{
