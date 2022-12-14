@@ -8,26 +8,25 @@
 body{
     width: 100vw;
     min-height: 100vh;
-    background-image: linear-gradient(blue,gray,white);
-    color: white;
+    background-color: white;
 }
 
 header{
     display: flex;
     flex-direction: row;     
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
-    background-color: blueviolet;
+    padding: 15px;
 }
 
 main{     
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
-    background-color: yellow;
+   /* background-color: rgba(107, 107, 107, 0.1);*/
 }
 
 footer{     
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     background-color: coral;
 }
@@ -50,7 +49,13 @@ article{
 /* CONTAINER HEADER */
 
 #logo{
-    line-height: 30px;
+    line-height: 20px;
+    color: blue;
+}
+
+#subtitulo{
+    color: black;
+    font-size: 1em;
 }
 
 nav{
@@ -61,26 +66,80 @@ nav{
     width: 100%;
 }
 
-a{    
-    color: white;
+nav > a{
     padding: 10px;
     font-weight: bold;
     text-decoration: none;
+    transition: all 0.5s;    
+    color: blue;
 }
 
-a:hover{
-    background-color: white;
-    color: black;
+nav > a:hover{
+    border: 1px solid blue;
+    border-radius: 16px;
 }
 
 /* CONTAINER MAIN */
 
-.servico{
+#banner{
+    background-image: url("../imagens/calculator-385506_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 400px;    
+}
+
+
+#sobre{
+    width: 100%;
+    background-color: pink;
+    height: 400px;
+}
+
+#servico{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-image: url("../imagens/office-2717014_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 15px;
+    height: 400px;
+}
+
+.caixa-servico{
+    display: flex;
+    flex-direction: column;
     width: 200px;
     height: 200px;
-    background-color: pink;
-    border: 1px solid black;
+    background-color: rgb(221, 221, 221);
+    border: 3px solid gray;
+    padding: 15px;
 }
+
+.caixa-servico a{
+    margin: 0 auto;
+}
+
+.caixa-servico h2{
+    font-size: 1.5em;
+    color: blue;
+}
+
+.caixa-servico p{
+    font-size: 1em;
+}
+
+.icons{
+    width:  30px;
+    height: 30px;
+}
+
 
 form{
     display: flex;
