@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(blue,gray,white);
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: row;     
+    max-width: 800px;
+    margin: auto;
+    background-color: blueviolet;
+}
+
+main{     
+    max-width: 800px;
+    margin: auto;
+    background-color: yellow;
+}
+
+footer{     
+    max-width: 800px;
+    margin: auto;
+    background-color: coral;
+}
+
+h1{
+    font-size: 2em;
+}
+
+section{ 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+article{
+    display: flex;
+    flex-direction: row;    
+}
+
+/* CONTAINER HEADER */
+
+#logo{
+    line-height: 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+a{    
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* CONTAINER MAIN */
+
+.servico{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+/* CONTAINER FOOTER */
+
+.menu-rodape{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: 1px solid black;
+}
