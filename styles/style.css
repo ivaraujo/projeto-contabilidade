@@ -200,6 +200,7 @@ form > input{
     font-size: 10pt;
     border: 2px solid gray;
     border-radius: 5px;
+    outline: none;
 }
 
 form > input:focus{
@@ -213,6 +214,11 @@ form > textarea{
     font-size: 10pt;
     border: 2px solid gray;
     border-radius: 5px;
+    outline: none;
+}
+
+form > textarea:focus{
+    border: 2px solid blue;
 }
 
 form > button{
@@ -228,7 +234,6 @@ form > button{
 }
 
 form > button:hover{
-    background-color: rgb(40, 40, 248);
     font-size: 1.1em;
     border-radius: 16px;
 }
@@ -272,4 +277,30 @@ form > button:hover{
 
 #assinatura-rodape > p > a{
     text-decoration: none;    
+}
+
+@media screen and (max-width: 780px){
+    article{
+        flex-direction: column;
+    }
+
+    #sobre {
+        height: 100%;
+    }
+
+    #servico{
+        height: 100%;
+    }
+
+    #contato{
+        height: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    #rodape{
+        flex-direction: column;
+    }
 }
