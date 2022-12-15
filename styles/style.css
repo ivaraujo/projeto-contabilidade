@@ -28,7 +28,8 @@ main{
 footer{     
     max-width: 1000px;
     margin: auto;
-    background-color: coral;
+    border-top: 1px solid rgba(128, 128, 128, 0.356);
+    background-color: rgb(221, 221, 221);
 }
 
 h1{
@@ -98,6 +99,24 @@ nav > a:hover{
     height: 400px;
 }
 
+#texto-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 35px;
+}
+
+#texto-sobre > h2{
+    color: blue;
+    font-size: 2em;
+}
+
+#texto-sobre > p{
+    color: black;
+    font-size: 12pt;
+}
+
 #servico{
     display: flex;
     justify-content: space-around;
@@ -151,12 +170,14 @@ nav > a:hover{
     align-items: center;
     justify-content: center;
     height: 400px;
-    padding: 15px;
+    padding: 25px;
     background-color: rgb(221, 221, 221);
 }
 
 #contato > h2{
-    color: white;
+    color: black;
+    border-bottom: 1px solid gray;
+    font-size: 1.5em;
 }
 
 form{
@@ -176,21 +197,40 @@ form > label{
 form > input{
     padding: 10px;
     color: black;
-    font-size: 1em;
+    font-size: 10pt;
     border: 2px solid gray;
     border-radius: 5px;
 }
 
+form > input:focus{
+    border: 2px solid blue;
+}
+
 form > textarea{
+    padding: 10px;
     margin-bottom: 15px;
+    color: black;
+    font-size: 10pt;
     border: 2px solid gray;
     border-radius: 5px;
 }
 
 form > button{
     padding: 10px;
-    border: 2px solid gray;    
+    border: 0px;    
     border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 0.5s;
+}
+
+form > button:hover{
+    background-color: rgb(40, 40, 248);
+    font-size: 1.1em;
+    border-radius: 16px;
 }
 
 /* CONTAINER FOOTER */
