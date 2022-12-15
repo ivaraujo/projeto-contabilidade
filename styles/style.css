@@ -235,9 +235,41 @@ form > button:hover{
 
 /* CONTAINER FOOTER */
 
-.menu-rodape{
-    width: 200px;
+#rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     height: 200px;
-    background-color: green;
-    border: 1px solid black;
+}
+
+#menu-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+#social-rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 15px;
+}
+
+#social-rodape > a{
+    padding: 10px;
+}
+
+#assinatura-rodape > p {
+    width: 100%;
+    padding: 15px;
+    font-size: 8pt;
+    color:black;
+}
+
+#assinatura-rodape > p > a{
+    text-decoration: none;    
 }
